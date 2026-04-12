@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin: 45px;
+}
+
+.header__title {
+  font-family: "Sekuya";
+  font-weight: 900;
+}
