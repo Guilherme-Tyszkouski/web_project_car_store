@@ -1,0 +1,9 @@
+.elements {
+  display: flex;
+  justify-content: center;
+}
+
+.elements__title {
+  font-family: "Roboto";
+  font-weight: 600;
+}
