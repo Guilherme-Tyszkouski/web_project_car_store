@@ -14,18 +14,20 @@
     <link rel="shortcut icon" href="/favicon" />
     <script src="./scripts/index.js" defer></script>
   </head>
+
   <body class="body">
     <div class="page">
       <header class="header">
         <h1 class="header__title">G.W.P.J MOTORS</h1>
         <nav class="nav">
           <ul class="nav__links">
-            <li><a href="#cars" class="nav__link">CARROS</a></li>
-            <li><a href="#about" class="nav__link">SOBRE</a></li>
-            <li><a href="#contatc" class="nav__link">CONTATO</a></li>
+            <li><a href="#content" class="nav__link">CARROS</a></li>
+            <li><a href="#contact" class="nav__link">CONTATO</a></li>
+            <li><a href="#login" class="nav__link">LOGIN</a></li>
           </ul>
         </nav>
       </header>
+
       <section class="menu">
         <img
           src="./images/image-header.png"
@@ -33,39 +35,91 @@
           alt="Imagem Carro"
         />
       </section>
-      <main class="content">
+
+      <main class="content" id="content">
         <section class="elements">
-          <h1 class="elements__title">CARROS A VENDA</h1>
+          <h1 class="elements__title">COLEÇÃO PREMIUM</h1>
+          <p class="elements__text">
+            <em
+              >Descubra uma seleção exclusiva de veículos que unem desempenho,
+              luxo e sofisticação. Trabalhamos com modelos cuidadosamente
+              escolhidos para oferecer qualidade, procedência e uma experiência
+              única na hora da compra. Encontre o carro ideal para o seu
+              estilo.</em
+            >
+          </p>
           <ul class="elements__cards"></ul>
         </section>
       </main>
-      <footer class="footer">
+
+      <footer class="footer" id="contact">
         <div class="footer__social">
-          <h2 class="footer__social-title">
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a href="#" class="footer__column-link">
-                  <img
-                    src="./images/facebook_white.svg"
-                    alt="logo Facebook"
-                    class="footer__social-icon"
-                  />Facebook
-                </a>
-              </li>
-              <li class="footer__list-item">
-                <a href="#" class="footer__column-link">
-                  <img
-                    src="./images/instagram_white.svg"
-                    alt="logo Instagram"
-                    class="footer__social-icon"
-                  />Instagram
-                </a>
-              </li>
-            </ul>
-          </h2>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__column-link">
+                <img
+                  src="./images/facebook_white.svg"
+                  alt="logo Facebook"
+                  class="footer__social-icon"
+                />
+                Facebook
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__column-link">
+                <img
+                  src="./images/instagram_white.svg"
+                  alt="logo Instagram"
+                  class="footer__social-icon"
+                />
+                Instagram
+              </a>
+            </li>
+          </ul>
         </div>
-        <p class="footer__copyright">&copy; 2026 Guilherme Tyszkouski</p>
+        <div class="footer__names">
+          <p class="footer__copyright">&copy; 2026 Guilherme Tyszkouski</p>
+          <p class="footer__copyright">&copy; 2026 Paulo Molena</p>
+          <p class="footer__copyright">&copy; 2026 João Eminen</p>
+          <p class="footer__copyright">&copy; 2026 Ueslei Bombeiro</p>
+        </div>
       </footer>
+    </div>
+
+    <template id="template">
+      <li class="template__card">
+        <img class="template__card-image" alt="Imagem do carro" />
+        <h3 class="template__card-title"></h3>
+        <p class="template__card-price"></p>
+        <p class="template__card-name"></p>
+      </li>
+    </template>
+
+    <div id="modal" class="modal">
+      <div class="modal__content">
+        <img
+          class="modal__button-close"
+          src="./images/close-Icon.svg"
+          alt="botão x fechar"
+          onclick="fecharModal()"
+        />
+
+        <img
+          class="modal__button-left"
+          src="./images/arow-left.svg"
+          alt="seta pra esquerda"
+          onclick="anterior()"
+        />
+        <img id="modal-img" alt="Foto ampliada" />
+
+        <img
+          class="modal__button-right"
+          src="./images/arow-right.svg"
+          alt="seta para direita"
+          onclick="proxima()"
+        />
+        <h2 id="modal-name"></h2>
+      </div>
     </div>
   </body>
 </html>
