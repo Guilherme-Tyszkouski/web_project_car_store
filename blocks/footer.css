@@ -28,3 +28,9 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+
+
+.footer__list-item{
+  list-style: none;
+}

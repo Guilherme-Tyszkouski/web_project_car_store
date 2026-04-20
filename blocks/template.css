@@ -1,0 +1,40 @@
+
+.elements__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.template__card {
+  width: 100%;
+  background:  rgb(112, 112, 112);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.template__card:hover {
+  transform: scale(1.03);
+}
+
+.template__card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.template__card-title {
+  font-size: 14px;
+  margin: 10px;
+}
+
+.template__card-price {
+  font-weight: bold;
+  margin: 0 10px 10px;
+}
