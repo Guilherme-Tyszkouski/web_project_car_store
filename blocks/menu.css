@@ -1,5 +1,25 @@
+
+.menu {
+  width: 100%;
+  display: block;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+
 .menu_image {
+  display: block !important;
+  width: 100% !important;
   max-width: 100%;
   height: auto;
-  display: block;
+  object-fit: cover;
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu_image {
+    min-height: 250px;
+    object-position: center;
+  }
 }
